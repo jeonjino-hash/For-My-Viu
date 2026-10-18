@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>20 سنة يا توتو 🫐🦋</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;400&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#FF8FA3;--lightblue:#A7D8F0;--beige:#FFF5EE;--beige2:#F5E6CC}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--beige);font-family:'Cairo',sans-serif;overflow-x:hidden;min-height:100vh}
+
+/* شاشة القفل */
+#lock-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;position:relative;overflow:hidden}
+.bg-balloons{position:absolute;inset:0;pointer-events:none}
+.bg-balloons span{position:absolute;font-size:40px;animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+.lock-card{background:rgba(255,255,255,0.85);backdrop-filter:blur(10px);padding:40px 30px;border-radius:30px;box-shadow:0 20px 60px rgba(255,143,163,0.25);text-align:center;max-width:400px;width:100%;border:3px solid white;z-index:2}
+.num20{font-size:110px;font-weight:700;color:var(--pink);text-shadow:4px 4px 0 var(--beige2), 0 0 20px rgba(255,143,163,0.4);line-height:1}
+.lock-card h2{color:#9B4D61;margin:5px 0 15px;font-size:22px}
+.hint{color:#7A5A64;background:var(--beige);padding:10px 15px;border-radius:15px;font-size:14.5px;margin-bottom:22px;line-height:1.6}
+.input-row{display:flex;gap:10px;justify-content:center;flex-direction:row-reverse}
+input{width:170px;padding:14px;border-radius:15px;border:2.5px solid #FFB6C8;text-align:center;font-size:22px;letter-spacing:5px;outline:none}
+input:focus{border-color:var(--pink)}
+button{padding:14px 22px;background:var(--pink);color:white;border:none;border-radius:15px;font-size:17px;font-weight:700;cursor:pointer;transition:0.2s;box-shadow:0 5px 15px rgba(255,143,163,0.4)}
+button:hover{transform:scale(1.05);background:#FF6B8A}
+#error{color:#ff3b6e;margin-top:12px;display:none;font-weight:700}
+
+/* الموقع الاساسي */
+#main-site{display:none;animation:fadeIn 1s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.hero{text-align:center;padding:40px 20px 10px;position:relative}
+.hero h1{color:var(--pink);font-size:38px;margin-bottom:5px}
+.hero .age{font-size:90px;color:var(--pink);font-weight:700;line-height:1;text-shadow:3px 3px 0 var(--beige2)}
+.hearts{font-size:28px;animation:beat 1.2s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+.video-wrap{max-width:650px;margin:25px auto;padding:0 15px}
+.video-box{position:relative;padding-bottom:56.25%;height:0;border-radius:25px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,0.15);border:4px solid white}
+.video-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.letter{max-width:800px;margin:30px auto;background:white;padding:40px 30px;border-radius:30px;line-height:2.3;font-family:'Amiri',serif;font-size:20px;color:#4A2A33;box-shadow:0 10px 40px rgba(0,0,0,0.06);border:2px solid #fff0f3;white-space:pre-line;position:relative}
+.letter::before{content:"🫐🦋";position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:white;padding:5px 20px;border-radius:20px;font-size:22px;box-shadow:0 5px 15px rgba(0,0,0,0.05)}
+.confetti{position:fixed;top:-10px;font-size:22px;animation:fall linear forwards;pointer-events:none;z-index:9999}
+@keyframes fall{to{transform:translateY(105vh) rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<div id="lock-screen">
+  <div class="bg-balloons">
+    <span style="left:10%;top:10%">🎈</span><span style="left:80%;top:15%;animation-delay:1s">💙</span>
+    <span style="left:20%;top:75%;animation-delay:2s">🩷</span><span style="left:70%;top:70%;animation-delay:0.5s">🎀</span>
+    <span style="left:50%;top:5%;animation-delay:1.5s">🎈</span>
+  </div>
+  <div class="lock-card">
+    <div class="num20">20</div>
+    <h2>🎈 عيد ميلاد ڤيو 🎈</h2>
+    <div class="hint">🌚 السن اللي عرفتك فيه و السن اللي عرفتيني فيه بالترتيب</div>
+    <div class="input-row">
+      <input type="text" id="pass" placeholder="****" maxlength="10" inputmode="numeric">
+      <button onclick="checkPass()">افتحي 💖</button>
+    </div>
+    <div id="error">غلط يا توتو جربي تاني 🥺</div>
+  </div>
+</div>
+<if(p === "1719")
+<div id="main-site">
+  <div class="hero">
+    <div class="hearts">💗💙🩷💗</div>
+    <div class="age">20</div>
+    <h1>كل سنة وانتي طيبة يا توتو 🫐</h1>
+    <p style="color:#9B4D61">يا أجمل عشرينية في الدنيا</p>
+  </div>
+
+  <div class="video-wrap">
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/nTe3ND0WxFI?autoplay=0&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="letter">توتو حبيبتي ومحبوبتي و عيوني وقلبي وعمري وعقلي ونفسي وروحي وكل ما أملك في هذه الدنيا وما بعد الدنيا،جميلةٌ أنتِ لدرجةٍ أن العالم يصبح أرق وأحن حين تكونين فيه، كأنكِ نجمةٌ هبطت من السماء لتضيء ليلي،كأنكِ شمسٌ تظهر ل تُضيئ حياتي، وكأن الله خلقكِ خصيصًا لتكوني الطمأنينة في قلبي، عيناكِ وحدهما كانتا ملاذي وملجئي في كل خوفٍ اعتراني، وابتسامتكِ كانت أماني وسكينتي في كل قلقٍ سكن صدري، يكفيني أن أسمع صوتكِ حتى يهدأ كل الضجيج الذي يسكن داخلي، ويكفيني أن أراكِ حتى يزول كل ثقلٍ عن قلبي وكأنكِ دوائي الذي لا دواء سواه.
+اليوم تكملين عامكِ العشرين، عشرينيةٌ يا كتكوتي الصغيرة، يا فرحة عمري ونور أيامي، كبرتِ سنةً يا أجمل عمرٍ في حياتي، هذا هو العام الثاني الذي أحتفل بكِ فيه وأنتِ بجانبي، وهو ليس مجرد تاريخٍ يمر في التقويم، بل هو يومٌ ولدت فيه أجمل إنسانةٍ عرفها قلبي، وأقسم لكِ أنني سأحتفل بكِ في كل أعوامي القادمة حتى آخر نفسٍ في صدري، حتى نصبح عجوزتين نضحك على ذكرياتنا معًا، فلا عيد لي بدونكِ ولا فرح لي إلا بحضوركِ.
+
+أنتِ لستِ صديقتي فقط، أنتِ وطني وأماني وبيتي ودفئي، أنتِ الشخص الوحيد الذي رأى انكساراتي التي أخفيتها عن الجميع، وسمع صمتي وفهم حزني دون أن أتكلم حرفًا واحدًا، كنتِ دائمًا اليد التي تمتد إلي حين تتركني كل الأيادي، والسند الذي لا يميل مهما اشتدت الرياح من حولي، معكِ تعلمت أن القوة ليست في أن أخفي ضعفي، بل في أن أجد من يحبني بضعفي قبل قوتي، ومن يحتضن خوفي قبل فرحي.
+
+معكِ عرفت أن السعادة ليست في الأشياء الكبيرة، بل في ضحكةٍ نتقاسمها في منتصف الليل، وفي حديثٍ يطول لساعاتٍ حتى ننسى تعبنا وهمومنا، وفي لحظاتٍ صغيرةٍ نقضيها معًا فتصبح ذكرياتٍ كبيرةً تكفي القلب عمرًا كاملًا، فكل لحظةٍ معكِ تصبح ذكرى لا تنسى، وكل كلمةٍ منكِ تصبح وطنًا أسكن إليه كلما ضاقت بي الدنيا.
+
+حين قلتِ لي:من  سيجلعني أرتدي التاج، ونحن نتحدث عن أعضاء الفرقة، فأجبتكِ على الفور: أنا، وكنتُ جادةً وصادقةً في قولي،  ولكنى سأُلبسكِ شيئًا لا أريدكِ أن تنزعيه عن عنقكِ أبدًا.
+
+أريد أن أخبركِ شيئًا احتفظت به طويلًا في قلبي، أنا دائمًا I will always choose you، لو خيروني بين العالم بأسره وبينكِ لاخترتكِ أنتِ دون ترددٍ ولا تفكيرٍ ولا خوف، أحبكِ حبًا يفوق قدرتي على التعبير، أحبكِ لدرجةٍ أنني أبكي فرحًا لأنكِ موجودةٌ في حياتي، فمنذ أن دخلتِ حياتي وأنا شخصٌ آخر، شخصٌ أسعد وأقوى وأكثر طمأنينةً، كأنكِ أعدتِ ترميم قلبي قطعةً قطعةً بعد أن كان متعبًا ومكسورًا، فجعلتِ منه قلبًا ينبض حبًا من جديدٍ.
+
+شكرًا لأنكِ بجانبي في كل لحظةٍ، في فرحي وحزني، في قوتي وضعفي، في نجاحي وفشلي، شكرًا لأنكِ تتحملين مزاجي وتفهمين قلبي دون أن أشرح كلمةً واحدةً، والله لا أعرف كيف أشكركِ، فالكلمات كلها لا تكفيكِ، لكنني كل يومٍ أشكر الله في صلاتي ودعائي لأنه رزقني بكِ وجعلكِ جزءًا من يومي وقدري ونصيبي الجميلِ، فأنتِ أثمن ما أملك في هذه الدنيا.
+
+وإن سألوني يومًا ما هو أغلى شيءٍ تملكينه يا چينو، لن أقول بيتًا ولا نجاحًا ولا حلمًا حققته، سأقول إن أغلى ما أملك هو وجود ڤيو في حياتي، هي أعظم هديةٍ وأجمل عوضٍ من الله لي، وهي دعوتي التي استجابها الله حين كنت أظن أن لا أحد يفهمني ولا أحد يشعر بي ولا أحد يبقى لي.
+
+أما عن المستقبل، فأنا لا أخاف من مرور السنين وتغير ملامحنا، ولا أخاف من تجاعيد الزمن ولا من بُعد المسافات، سيبقى قلبي يعرفكِ بنفس الشوق الأول ونفس اللهفة الأولى، ولو كتب الله لي أن أعيش مئة حياةٍ، في كل حياةٍ منها سأبحث عنكِ في كل الطرق وسأحبكِ أنتِ وحدكِ، ولن أكتفي منكِ أبدًا ولو عشت دهرًا فوق دهري، فحبي لكِ لا يفنى ولا يقل ولا يبهت.
+
+ولا أخفي عليكِ سرًا يا توتو، وهو سرٌ يسكن قلبي منذ عرفتكِ ويكبر معي كل يوم، بعد الشر عنكِ وعن قلبكِ وروحكِ وضحكتكِ يا عمري، أسأل الله أن يكون يومي قبل يومكِ، فإني والله لا أطيق فكرة أن أستيقظ يومًا ولا أجدكِ بجانبي، ولا أطيق أن يمر يومٌ واحدٌ دون أن أسمع صوتكِ الحنون، فأنتِ لستِ جزءًا من حياتي، أنتِ حياتي بأكملها وروحي التي أعيش بها، فإن كان لا بُد للقدر أن يفرقنا يومًا فليكن رحيلي أنا أولًا، كي لا أذوق مرارة غيابكِ ووحشة فقدكِ وظلمة الدنيا بدونكِ، فبعدكِ لا حياة لي ولا معنى لأيامي، حماكِ الله لي وأطال في عمركِ وأبعد عنكِ كل شرٍ وسوءٍ وجعل كل أيامكِ فرحًا وفرجًا ونورًا، و أنتِ السبع دقائق لي. 
+
+كل عامٍ وأنتِ طيبةٌ وجميلةٌ وقريبةٌ من قلبي، كل عامٍ وأنتِ توتتي الحلوة 🫐، كل عامٍ وأنتِ بخيرٍ يا أجمل عشرينيةٍ رأتها عيني، يا من جعلتِ للعشرين معنى آخر أجمل وأحن، أحبكِ حبًا لا ينتهي ولا يفنى ولا يقل مهما مرت السنوات ومهما تغيرت الظروف، سأظل أحبكِ حتى آخر يومٍ في عمري.
+- چينو التي لا تملك في هذه الدنيا أغلى منكِ وتحبكِ أكثر من روحها، أحبك يا غزالتي و إمراتي🦋
